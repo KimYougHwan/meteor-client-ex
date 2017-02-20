@@ -1,0 +1,61 @@
+<template name="A_B_dataRegistration">
+	<div id="A_B_dataRegistration" class="tab-pane fade">
+		<div class="well">
+			<button class="btn btn-default">전체자료 삭제(졸업생 제외)</button>
+			<button class="btn btn-default">졸업생자료 삭제(재학생 제외)</button>
+		</div>
+		<div class="well">
+			<span>※ 학생부 자료등록 (필수등록)</span>
+			<span>NEIS에서 다운로드 받은 엑셀파일을 사용하여, 학생부 성적 자료를 등록합니다.</span>
+			<form class="form-inline">
+				<div class="form-group">
+					<label>학년 이력 : </label>
+					<input class="form-control" type="text" name="">
+					<button class="btn btn-default">폴더선택</button>
+					<button class="btn btn-default">등록</button>
+				</div>
+			</form>
+			<form class="form-inline">
+				<div class="form-group">
+					<label>교과학습발달사항 : </label>
+					<input class="form-control" type="text" name="">
+					<button class="btn btn-default">폴더선택</button>
+					<button class="btn btn-default">등록</button>
+				</div>
+			</form>
+		</div>
+		<div class="well">
+			<span>※ 수능/모의고사 성적 DB 생성</span>
+			<button class="btn btn-default">대교협 서버전송</button>
+			<form class="form-inline">
+				<div class="form-group">
+					<label>모의고사 목록 : </label>
+					<span>
+						<label class="radio-inline"><input type="radio" name="grade">1학년</label>
+						<label class="radio-inline"><input type="radio" name="grade">2학년</label>
+						<label class="radio-inline"><input type="radio" name="grade">3학년</label>
+					</span>
+					<select class="form-control">
+						<option>선택</option>
+					</select>
+					<button class="btn btn-default">선택회차 삭제</button>
+					<button class="btn btn-default">선택회차 입력내용 엑셀다운</button>
+				</div>
+			</form>
+			<span>모의고사 폴더 : </span>
+			<span>- 응시하지 않은 영역은 해당 셀을 모두 빈칸으로 해야합니다.</span>
+			<span>- 탐구 및 제2외국어 과목명은 엑셀 콤보박스에 나타나는 과목명과 일치해야 합니다.</span>
+		</div>
+		<div class="well">
+			<span>※ 비교과 DB 등록</span>
+			<span>NEIS에서 다운로드 받은 엑셀파일을 사용하여, 학생부 성적 자료를 등록합니다.</span>
+			<span>항목 선택 : </span>
+			<select>
+				<option>선택</option>
+			</select>
+			<span>학생부 생활기록부 : </span>
+			<button class="btn btn-default">폴더선택</button>
+			<button class="btn btn-default">등록</button>
+		</div>
+	</div>
+</template>

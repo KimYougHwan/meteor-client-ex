@@ -1,0 +1,14 @@
+<template name="E_admissionManagement">
+	<div id="E_admissionManagement">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#E_A_susiAdmissionManagement" data-toggle="tab">수시진학관리</a></li>
+			<li><a href="#E_B_jeongsiAdmissionManagement" data-toggle="tab">정시진학관리</a></li>
+			<li><a href="#E_C_admissionAnalysis" data-toggle="tab">진학분석</a></li>
+		</ul>
+		<div class="tab-content">
+			{{> E_A_susiAdmissionManagement }}
+			{{> E_B_jeongsiAdmissionManagement }}
+			{{> E_C_admissionAnalysis }}
+		</div>
+	</div>
+</template>

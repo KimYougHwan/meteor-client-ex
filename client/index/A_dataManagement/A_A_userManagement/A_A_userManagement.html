@@ -1,0 +1,42 @@
+<template name="A_A_userManagement">
+	<div id="A_A_userManagement" class="tab-pane fade in active">
+		<div class="well">
+			<span class="left">서버 IP : </span><span class="left">192.168.5.31</span>
+			<span class="right">
+				<button id="refresh" class="btn btn-default" type="button">새로고침</button>
+				<button id="class-management" class="btn btn-default" type="button">학반관리</button>
+				<button id="add-new-user" class="btn btn-default" type="button">사용자 신규 추가</button>
+			</span>
+		</div>
+		<div class="table-responsive">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>No</th>
+						<th>ID</th>
+						<th>이름</th>
+						<th>권한</th>
+						<th>승인여부</th>
+						<th>수정</th>
+						<th>삭제</th>
+						<th>승인</th>
+						<th>메모</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>admin</td>
+						<td>관리자</td>
+						<td>관리자</td>
+						<td>승인됨</td>
+						<td><button class="btn btn-default" type="button">수정</button></td>
+						<td><button class="btn btn-default" type="button">삭제</button></td>
+						<td><button class="btn btn-default" type="button">승인</button></td>
+						<td>여기에 메모를 작성</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</template>

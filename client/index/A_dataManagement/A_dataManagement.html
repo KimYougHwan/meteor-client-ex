@@ -1,0 +1,16 @@
+<template name="A_dataManagement">
+	<div id="A_dataManagement">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#A_A_userManagement" data-toggle="tab">사용자관리</a></li>
+			<li><a href="#A_B_dataRegistration" data-toggle="tab">자료등록</a></li>
+			<li><a href="#A_C_dataManagement" data-toggle="tab">자료관리</a></li>
+			<li><a href="#A_D_logManagement" data-toggle="tab">로그관리</a></li>
+		</ul>
+		<div class="tab-content">
+			{{> A_A_userManagement }}
+			{{> A_B_dataRegistration }}
+			{{> A_C_dataManagement }}
+			{{> A_D_logManagement }}
+		</div>
+	</div>
+</template>

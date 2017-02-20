@@ -1,0 +1,14 @@
+<template name="B_A_schoolRecordsAnalysis">
+	<div id="B_A_schoolRecordsAnalysis" class="tab-pane fade in active">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#B_A_A_studentAffairs" data-toggle="tab">학생부 현황</a></li>
+			<li><a href="#B_A_B_ratingAnalysis" data-toggle="tab">등급 분석</a></li>
+			<li><a href="#B_A_C_zScoreAnalysis" data-toggle="tab">Z점수 분석</a></li>
+		</ul>
+		<div class="tab-content">
+			{{> B_A_A_studentAffairs }}
+			{{> B_A_B_ratingAnalysis }}
+			{{> B_A_C_zScoreAnalysis }}
+		</div>
+	</div>
+</template>

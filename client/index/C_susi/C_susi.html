@@ -1,0 +1,14 @@
+<template name="C_susi">
+	<div id="C_susi">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#C_A_susiConsulting" data-toggle="tab">수시상담</a></li>
+			<li><a href="#C_B_admissionPlan" data-toggle="tab">입학계획</a></li>
+			<li><a href="#C_C_graduateAdmissionResultInformation" data-toggle="tab">졸업생 진학결과 정보</a></li>
+		</ul>
+		<div class="tab-content">
+			{{> C_A_susiConsulting }}
+			{{> C_B_admissionPlan }}
+			{{> C_C_graduateAdmissionResultInformation }}
+		</div>
+	</div>
+</template>

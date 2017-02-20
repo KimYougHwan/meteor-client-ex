@@ -1,0 +1,12 @@
+{
+  "electron": {
+    "name": "Daekyo",
+    "version": "0.1.0",
+    "description": "대입상담프로그램",
+    "height": 768,
+    "width": 1024,
+    "frame": true,
+    "resizable": true,
+    "title-bar-style": "hidden"
+  }
+}

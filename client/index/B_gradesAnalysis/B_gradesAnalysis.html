@@ -1,0 +1,16 @@
+<template name="B_gradesAnalysis">
+	<div id="B_gradesAnalysis">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#B_A_schoolRecordsAnalysis" data-toggle="tab">내신 성적 분석</a></li>
+			<li><a href="#B_B_nonCurriculum" data-toggle="tab">비교과</a></li>
+			<li><a href="#B_C_satMockTestGradesAnalysis" data-toggle="tab">수능/모의고사 성적 분석</a></li>
+			<li><a href="#B_D_printPerStudent" data-toggle="tab">학생별 출력</a></li>
+		</ul>
+		<div class="tab-content">
+			{{> B_A_schoolRecordsAnalysis }}
+			{{> B_B_nonCurriculum }}
+			{{> B_C_satMockTestGradesAnalysis }}
+			{{> B_D_printPerStudent }}
+		</div>
+	</div>
+</template>

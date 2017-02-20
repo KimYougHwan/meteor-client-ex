@@ -1,0 +1,12 @@
+<template name="E_C_admissionAnalysis">
+	<div id="E_C_admissionAnalysis" class="tab-pane fade">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#E_C_A_supportedUniversitiesStatus" data-toggle="tab">지원대학현황</a></li>
+			<li><a href="#E_C_B_typicalTypeAnalysis" data-toggle="tab">전형유형분석</a></li>
+		</ul>
+		<div class="tab-content">
+			{{> E_C_A_supportedUniversitiesStatus }}
+			{{> E_C_B_typicalTypeAnalysis }}
+		</div>
+	</div>
+</template>
