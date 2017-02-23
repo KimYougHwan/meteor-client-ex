@@ -1,5 +1,397 @@
 <template name="B_A_C_zScoreAnalysis">
 	<div id="B_A_C_zScoreAnalysis" class="tab-pane fade">
-		<h2>B_A_C_zScoreAnalysis</h2>
+		<!-- 교과별 Z점수 현황 테이블 시작 -->
+		<div class="table-responsive">
+			<table class="table table-bordered">
+				<caption>교과별 Z점수 현황 [이수단위 적용 / 이수단위 미적용]</caption>
+				<thead>
+					<tr>
+						<th>학년</th>
+						<th colspan="2">1학년</th>
+						<th colspan="2">2학년</th>
+						<th colspan="2">3학년</th>
+						<th colspan="2">학년평균</th>
+					</tr>
+					<tr>
+						<th>단위수</th>
+						<th>적용</th>
+						<th>미적용</th>
+						<th>적용</th>
+						<th>미적용</th>
+						<th>적용</th>
+						<th>미적용</th>
+						<th>적용</th>
+						<th>미적용</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>국어</th>
+						<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>영어</th>
+						<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>수학</th>
+						<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>사회</th>
+						<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>과학</th>
+						<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>교과평균</th>
+						<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- 교과별 Z점수 현황 테이블 끝 -->
+		<!-- 교과별 Z점수 현황 차트 시작 -->
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-6">
+						<h1>여기에 차트가 들어감</h1>
+					</div>
+					<div class="col-md-6">
+						<h1>여기에 차트가 들어감</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 교과별 Z점수 현황 차트 끝 -->
+		<!-- 이수단위 적용/미적용 우수교과 테이블 시작 -->
+		<div class="table-responsive">
+			<table class="table table-bordered">
+				<caption>이수단위 적용/미적용 우수교과</caption>
+				<thead>
+					<tr>
+						<th>단위수</th>
+						<th colspan="6">적용</th>
+						<th colspan="6">미적용</th>
+					</tr>
+					<tr>
+						<th>순위</th>
+						<th>1순위</th>
+						<th>2순위</th>
+						<th>3순위</th>
+						<th>4순위</th>
+						<th>5순위</th>
+						<th>6순위</th>
+						<th>1순위</th>
+						<th>2순위</th>
+						<th>3순위</th>
+						<th>4순위</th>
+						<th>5순위</th>
+						<th>6순위</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>1학년</th>
+						<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>2학년</th>
+						<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>3학년</th>
+						<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>학년평균</th>
+						<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- 이수단위 적용/미적용 우수교과 테이블 끝 -->
+		<!-- 조합별 Z점수 현황 테이블 시작 -->
+		<div class="table-responsive">
+			<table class="table table-bordered">
+				<caption>조합별 Z점수 현황</caption>
+				<thead>
+					<tr>
+						<th>학년</th>
+						<th colspan="2">1학년</th>
+						<th colspan="2">2학년</th>
+						<th colspan="2">3학년</th>
+						<th colspan="2">학년평균</th>
+					</tr>
+					<tr>
+						<th>단위수</th>
+						<th>적용</th>
+						<th>미적용</th>
+						<th>적용</th>
+						<th>미적용</th>
+						<th>적용</th>
+						<th>미적용</th>
+						<th>적용</th>
+						<th>미적용</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>전교과</th>
+						<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>국어+영어+수학+사회+과학</th>
+						<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>국어+영어+수학+사회</th>
+						<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>국어+영어+수학+과학</th>
+						<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>국어+영어+수학</th>
+						<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>국어+영어+사회</th>
+						<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>영어+수학+과학</th>
+						<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- 조합별 Z점수 현황 테이블 끝 -->
+		<!-- 조합별 Z점수 현황 차트 시작 -->
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-6">
+						<h1>여기에 차트가 들어감</h1>
+					</div>
+					<div class="col-md-6">
+						<h1>여기에 차트가 들어감</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 조합별 Z점수 현황 차트 끝 -->
+		<!-- 반영비율별 Z점수 현황 테이블 시작 -->
+		<div class="table-responsive">
+			<table class="table table-bordered">
+				<caption>반영비율별 Z점수 현황</caption>
+				<thead>
+					<tr>
+						<th>반영비율</th>
+						<th colspan="2">(1학년:2학년:3학년)<br>전학년 100</th>
+						<th colspan="2">(1학년:2학년:3학년)<br>20:30:50</th>
+						<th colspan="2">(1학년:2학년:3학년)<br>20:40:40</th>
+						<th colspan="2">(1학년:2학년:3학년)<br>30:30:40</th>
+						<th colspan="2">(1학년:2학년:3학년)<br>30:30:40</th>
+						<th colspan="2">(1학년:2학년:3학년)<br>30:35:35</th>
+						<th colspan="2">(1학년:2학년:3학년)<br>33:33:33</th>
+						<th colspan="2">(1학년:2학년:3학년)<br>40:30:30</th>
+						<th colspan="2">(2학년:3학년)<br>20:80</th>
+						<th colspan="2">(2학년:3학년)<br>30:70</th>
+						<th colspan="2">(2학년:3학년)<br>40:60</th>
+					</tr>
+					<tr>
+						<th>단위수</th>
+						<th>적용</th><th>미적용</th>
+						<th>적용</th><th>미적용</th>
+						<th>적용</th><th>미적용</th>
+						<th>적용</th><th>미적용</th>
+						<th>적용</th><th>미적용</th>
+						<th>적용</th><th>미적용</th>
+						<th>적용</th><th>미적용</th>
+						<th>적용</th><th>미적용</th>
+						<th>적용</th><th>미적용</th>
+						<th>적용</th><th>미적용</th>
+						<th>적용</th><th>미적용</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>국어</th>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>영어</th>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>수학</th>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>사회</th>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>과학</th>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>전교과</th>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>국어+영어+수학+사회+과학</th>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>국어+영어+수학+사회</th>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>국어+영어+수학+과학</th>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>국어+영어+수학</th>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>국어+영어+사회</th>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+					</tr>
+					<tr>
+						<th>영어+수학+과학</th>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- 반영비율별 Z점수 현황 테이블 끝 -->
+		<p class="red">※ 학년별 성적이 없을 경우 이전 학년의 학생 성적이 반영됩니다.</p>
 	</div>
 </template>

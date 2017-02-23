@@ -1,5 +1,136 @@
 <template name="C_A_susiConsulting">
 	<div id="C_A_susiConsulting" class="tab-pane fade in active">
-		<h2>C_A_susiConsulting</h2>
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<form class="form-inline">
+					<div class="form-group">
+						<label>설립구분 : </label>
+						<select class="form-control">
+							<option>선택</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>지역 : </label>
+						<select class="form-control">
+							<option>선택</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>계열 : </label>
+						<select class="form-control">
+							<option>선택</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>대학명 : </label>
+						<select class="form-control">
+							<option>선택</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>전형유형 : </label>
+						<select class="form-control">
+							<option>선택</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>검색어 : </label>
+						<input class="form-control" type="text" name="" placeholder="검색어 입력">
+					</div>
+					<div class="form-group">
+						<button class="btn btn-default" type="submit">검색</button>
+					</div>
+					<div class="form-group">
+						<div class="checkbox">
+							<label><input type="checkbox" name="">결과내검색</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" name="">여대제외</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" name="">검색조건우선</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" name="">전문대제외</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<button class="btn btn-default" type="button">검색조건 초기화</button>
+						<button class="btn btn-default" type="button">목차설정 초기화</button>
+						<button class="btn btn-default" type="button">설정</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="table-responsive">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th></th>
+						<th>설립구분</th>
+						<th>지역</th>
+						<th>대학명</th>
+						<th>시기</th>
+						<th>전형유형</th>
+						<th>세부유형</th>
+						<th>계열</th>
+						<th>모집단위</th>
+						<th>세부전공</th>
+						<th>모집인원</th>
+						<th>선발유형</th>
+						<th>전형내용(1단계)</th>
+						<th>전형내용(2단계)</th>
+						<th>최저학력기준</th>
+						<th>17대학별내등급</th>
+						<th>16사례등급평균</th>
+						<th>내신위치</th>
+						<th>위치보기</th>
+						<th>17내교과점수</th>
+						<th>16전체사례수</th>
+						<th>16합격사례수</th>
+						<th>교과지표</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th></th>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#C_A_A_applicationGuideline" data-toggle="tab">모집요강</a></li>
+			<li><a href="#C_A_B_interestedUniversities" data-toggle="tab">관심대학</a></li>
+			<li><a href="#C_A_C_consultationContents" data-toggle="tab">상담내용</a></li>
+			<li><a href="#C_A_D_ReflectiveCurriculumInformation" data-toggle="tab">반영교과정보</a></li>
+		</ul>
+		<div class="tab-content">
+			{{> C_A_A_applicationGuideline }}
+			{{> C_A_B_interestedUniversities }}
+			{{> C_A_C_consultationContents }}
+			{{> C_A_D_ReflectiveCurriculumInformation }}
+		</div>
 	</div>
 </template>

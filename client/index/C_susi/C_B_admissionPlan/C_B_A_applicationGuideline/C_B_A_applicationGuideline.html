@@ -1,5 +1,22 @@
 <template name="C_B_A_applicationGuideline">
-	<div id="C_B_A_applicationGuideline">
-		<h2>C_B_A_applicationGuideline</h2>
+	<div id="C_B_A_applicationGuideline" class="tab-pane fade in active">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#C_B_A_A_typicalMethod" data-toggle="tab">전형방법</a></li>
+			<li><a href="#C_B_A_B_lowestStandard" data-toggle="tab">최저기준</a></li>
+			<li><a href="#C_B_A_C_practicalSkill" data-toggle="tab">실기</a></li>
+			<li><a href="#C_B_A_D_essayExam" data-toggle="tab">논술</a></li>
+			<li><a href="#C_B_A_E_interview" data-toggle="tab">면접</a></li>
+			<li><a href="#C_B_A_F_writtenTest" data-toggle="tab">필답고사</a></li>
+			<li><a href="#C_B_A_G_etc" data-toggle="tab">기타</a></li>
+		</ul>
+		<div class="tab-content">
+			{{> C_B_A_A_typicalMethod }}
+			{{> C_B_A_B_lowestStandard }}
+			{{> C_B_A_C_practicalSkill }}
+			{{> C_B_A_D_essayExam }}
+			{{> C_B_A_E_interview }}
+			{{> C_B_A_F_writtenTest }}
+			{{> C_B_A_G_etc }}
+		</div>
 	</div>
 </template>

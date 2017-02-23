@@ -1,5 +1,157 @@
 <template name="D_A_jeongsiConsulting">
 	<div id="D_A_jeongsiConsulting" class="tab-pane fade in active">
-		<h2>D_A_jeongsiConsulting</h2>
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<form class="form-inline">
+					<div class="form-group">
+						<label>설립구분 : </label>
+						<select class="form-control">
+							<option>선택</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>지역 : </label>
+						<select class="form-control">
+							<option>선택</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>계열 : </label>
+						<select class="form-control">
+							<option>선택</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>시기 : </label>
+						<select class="form-control">
+							<option>선택</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>대학명 : </label>
+						<select class="form-control">
+							<option>선택</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>전형유형 : </label>
+						<select class="form-control">
+							<option>선택</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>검색어 : </label>
+						<input class="form-control" type="text" name="" placeholder="검색어 입력">
+					</div>
+					<div class="form-group">
+						<button class="btn btn-default" type="submit">검색</button>
+					</div>
+					<div class="form-group">
+						<div class="checkbox">
+							<label><input type="checkbox" name="">결과내검색</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" name="">검색조건우선</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" name="">지원적정대학</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" name="">여대제외</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" name="">전문대제외</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<button class="btn btn-default" type="button">검색조건 초기화</button>
+						<button class="btn btn-default" type="button">목차설정 초기화</button>
+						<button class="btn btn-default" type="button">설정</button>
+					</div>
+					<div class="form-group">
+						<label>수능 / 모의고사 선택 : </label>
+						<select class="form-control">
+							<option>선택</option>
+						</select>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="table-responsive">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th></th>
+						<th>설립구분</th>
+						<th>지역</th>
+						<th>대학명</th>
+						<th>시기</th>
+						<th>전형유형</th>
+						<th>세부유형</th>
+						<th>계열</th>
+						<th>모집단위</th>
+						<th>세부전공</th>
+						<th>모집인원</th>
+						<th>선발유형</th>
+						<th>수능총점</th>
+						<th>2017내점수</th>
+						<th>2016변환점수</th>
+						<th>합격사례평균</th>
+						<th>위치보기</th>
+						<th>사례수(합격자)</th>
+						<th>전형내용</th>
+						<th>반영영역수</th>
+						<th>탐구수</th>
+						<th>반영영역</th>
+						<th>수능지표</th>
+						<th>최저학력기준</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th></th>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#D_A_A_applicationGuideline" data-toggle="tab">모집요강</a></li>
+			<li><a href="#D_A_B_interestedUniversities" data-toggle="tab">관심대학</a></li>
+			<li><a href="#D_A_C_consultationContents" data-toggle="tab">상담내용</a></li>
+			<li><a href="#D_A_D_reflectiveAreaInformation" data-toggle="tab">반영영역정보</a></li>
+			<li><a href="#D_A_E_reflectiveRatioByArea" data-toggle="tab">영역별 반영비율</a></li>
+			<li><a href="#D_A_F_satReflectionMethod" data-toggle="tab">수능반영방법</a></li>
+		</ul>
+		<div class="tab-content">
+			{{> D_A_A_applicationGuideline }}
+			{{> D_A_B_interestedUniversities }}
+			{{> D_A_C_consultationContents }}
+			{{> D_A_D_reflectiveAreaInformation }}
+			{{> D_A_E_reflectiveRatioByArea }}
+			{{> D_A_F_satReflectionMethod }}
+		</div>
 	</div>
 </template>

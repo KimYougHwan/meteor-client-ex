@@ -1,5 +1,153 @@
 <template name="E_A_susiAdmissionManagement">
 	<div id="E_A_susiAdmissionManagement" class="tab-pane fade in active">
-		<h2>E_A_susiAdmissionManagement</h2>
+		<!-- 폼 시작 -->
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="form-inline">
+					<div class="form-group">
+						<label>학년 : </label>
+						<select class="form-control">
+							<option>선택</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>학반 : </label>
+						<select class="form-control">
+							<option>선택</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>이름 : </label>
+						<select class="form-control">
+							<option>선택</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>대학별 검색 : </label>
+						<select class="form-control">
+							<option>선택</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>검색어 : </label>
+						<input class="form-control" type="text" name="" placeholder="검색어 입력">
+					</div>
+					<div class="form-group">
+						<button class="btn btn-default">검색</button>
+					</div>
+					<div class="form-group">
+						<div class="checkbox">
+							<label><input type="checkbox" name="">결과내 검색</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<button class="btn btn-default">선택 삭제</button>
+						<button class="btn btn-default">엑셀로 만들기</button>
+						<button class="btn btn-default">지역 수합용 자료 저장</button>
+						<button class="btn btn-default">대교협 서버로 전송</button>
+					</div>
+					<div class="form-group">
+						<p class="red">※ 내년도 합불 자료의 정확성을 위해 최초후보순위를 정확히 입력해 주세요.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 폼 끝 -->
+		<!-- 테이블 시작 -->
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<p class="red">※ 최초후보순위 입력 이후 순위변동 및 추합내용은 비고란에 입력해 주세요. 예) 30->20->5 추합</p>
+				<p class="red">※ 최초후보순위 및 비고란 입력후 TAB키를 눌러야 적용됩니다.</p>
+				<p><span class="red">※ 총 개수 : </span><span class="red">0</span></p>
+				<p class="blue">검색 버튼을 누른 다음 대교협 서버로 자료를 전송해 주시기 바랍니다.</p>
+			</div>
+		</div>
+		<div class="table-responsive">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th></th>
+						<th>학년</th>
+						<th>반</th>
+						<th>번호</th>
+						<th>이름</th>
+						<th>지역</th>
+						<th>계열</th>
+						<th>대학명</th>
+						<th>모집단위</th>
+						<th>모집시기</th>
+						<th>전형유형</th>
+						<th>세부유형</th>
+						<th>선발유형</th>
+						<th>1단계</th>
+						<th>최종단계</th>
+						<th>불합격사유</th>
+						<th>최초후보순위</th>
+						<th>비고</th>
+						<th>등록여부</th>
+						<th>면접일자</th>
+						<th>실기일자</th>
+						<th>논술일자</th>
+						<th>적성일자</th>
+						<th>최종발표일</th>
+						<th>삭제</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th></th>
+						<th>-</th>
+						<th>-</th>
+						<th>-</th>
+						<th>-</th>
+						<th>-</th>
+						<th>-</th>
+						<th>-</th>
+						<th>-</th>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>
+							<select class="form-control">
+								<option>선택</option>
+								<option>합격</option>
+								<option>불합격</option>
+							</select>
+						</td>
+						<td>
+							<select class="form-control">
+								<option>선택</option>
+								<option>합격</option>
+								<option>불합격</option>
+								<option>예비</option>
+								<option>추가합격</option>
+							</select>
+						</td>
+						<td>
+							<select class="form-control">
+								<option>선택</option>
+							</select>
+						</td>
+						<td>-</td>
+						<td>-</td>
+						<td>
+							<select class="form-control">
+								<option>선택</option>
+								<option>O</option>
+								<option>X</option>
+							</select>
+						</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- 테이블 끝 -->
 	</div>
 </template>

@@ -1,5 +1,141 @@
 <template name="B_C_satMockTestGradesAnalysis">
 	<div id="B_C_satMockTestGradesAnalysis" class="tab-pane fade">
-		<h2>B_C_satMockTestGradesAnalysis</h2>
+		<!-- 테이블 시작 -->
+		<div class="table-responsive">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th rowspan="2">시험명 (날짜)</th>
+						<th colspan="4">국어</th>
+						<th colspan="4">영어</th>
+						<th colspan="5">수학</th>
+						<th colspan="5">탐구1</th>
+						<th colspan="5">탐구2</th>
+						<th colspan="2">한국사</th>
+						<th colspan="5">제2외국어</th>
+					</tr>
+					<tr>
+						<th>원점수</th><th>표점</th><th>백분위</th><th>등급</th>
+						<th>원점수</th><th>표점</th><th>백분위</th><th>등급</th>
+						<th>유형</th><th>원점수</th><th>표점</th><th>백분위</th><th>등급</th>
+						<th>과목</th><th>원점수</th><th>표점</th><th>백분위</th><th>등급</th>
+						<th>과목</th><th>원점수</th><th>표점</th><th>백분위</th><th>등급</th>
+						<th>원점수</th><th>등급</th>
+						<th>과목</th><th>원점수</th><th>표점</th><th>백분위</th><th>등급</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>-</td>
+						<td>-</td><td>-</td><td>-</td><td>-</td>
+						<td>-</td><td>-</td><td>-</td><td>-</td>
+						<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+						<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+						<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td><td>-</td><td>-</td><td>-</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- 테이블 끝 -->
+		<!-- 차트 시작 -->
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div>
+					<label class="radio-inline"><input type="radio" name="scoreType">표준점수</label>
+					<label class="radio-inline"><input type="radio" name="scoreType">백분위</label>
+					<label class="radio-inline"><input type="radio" name="scoreType">등급</label>
+				</div>
+				<div>
+					<h1>여기에 차트가 들어감</h1>
+				</div>
+			</div>
+		</div>
+		<!-- 차트 끝 -->
+		<!-- 테이블 시작 -->
+		<div class="form-inline">
+			<div class="form-group">
+				<label>모의고사 선택 : </label>
+				<select class="form-control">
+					<option>선택</option>
+				</select>
+			</div>
+		</div>
+		<div class="table-responsive">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>과목조합</th>
+						<th colspan="2">국수영탐</th>
+						<th colspan="2">국영탐</th>
+						<th colspan="2">수영탐</th>
+						<th colspan="2">국수탐</th>
+						<th colspan="2">국수영탐(택3)</th>
+						<th>국수영</th>
+						<th colspan="2">국수영(택2)+탐</th>
+						<th>수영</th>
+					</tr>
+					<tr>
+						<th>탐구과목수</th>
+						<th>1</th><th>2</th>
+						<th>1</th><th>2</th>
+						<th>1</th><th>2</th>
+						<th>1</th><th>2</th>
+						<th>1</th><th>2</th>
+						<th>-</th>
+						<th>1</th><th>2</th>
+						<th>-</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>표점(평균/합계)</th>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<th>백분위(평균/합계)</th>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<th>등급(평균/합계)</th>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td>
+						<td>-</td><td>-</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<th>조합별 반영대학</th>
+						<td><button class="btn btn-default">대학보기</button></td><td><button class="btn btn-default">대학보기</button></td>
+						<td><button class="btn btn-default">대학보기</button></td><td><button class="btn btn-default">대학보기</button></td>
+						<td><button class="btn btn-default">대학보기</button></td><td><button class="btn btn-default">대학보기</button></td>
+						<td><button class="btn btn-default">대학보기</button></td><td><button class="btn btn-default">대학보기</button></td>
+						<td><button class="btn btn-default">대학보기</button></td><td><button class="btn btn-default">대학보기</button></td>
+						<td><button class="btn btn-default">대학보기</button></td>
+						<td><button class="btn btn-default">대학보기</button></td><td><button class="btn btn-default">대학보기</button></td>
+						<td><button class="btn btn-default">대학보기</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- 테이블 끝 -->
 	</div>
 </template>

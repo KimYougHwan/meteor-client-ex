@@ -1,5 +1,63 @@
 <template name="C_C_graduateAdmissionResultInformation">
 	<div id="C_C_graduateAdmissionResultInformation" class="tab-pane fade">
-		<h2>C_C_graduateAdmissionResultInformation</h2>
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<form class="form-inline">
+					<div class="form-group">
+						<label>대학명 : </label>
+						<select class="form-control">
+							<option>선택</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>대학명/전형명/학과명 : </label>
+						<input class="form-control" type="text" name="">
+					</div>
+					<button class="btn btn-default" type="submit">검색</button>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="table-responsive">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>-</th>
+								<th>-</th>
+								<th>-</th>
+								<th>-</th>
+								<th>-</th>
+								<th>-</th>
+								<th>-</th>
+								<th>-</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>-</th>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#C_C_A_studentGrades" data-toggle="tab">학생부 성적</a></li>
+					<li><a href="#C_C_B_mockTestGrades" data-toggle="tab">모의고사 성적</a></li>
+				</ul>
+				<div class="tab-content">
+					{{> C_C_A_studentGrades }}
+					{{> C_C_B_mockTestGrades }}
+				</div>
+			</div>
+		</div>
 	</div>
 </template>

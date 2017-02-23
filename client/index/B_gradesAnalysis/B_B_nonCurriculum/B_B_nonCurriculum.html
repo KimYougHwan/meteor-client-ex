@@ -1,5 +1,101 @@
 <template name="B_B_nonCurriculum">
 	<div id="B_B_nonCurriculum" class="tab-pane fade">
-		<h2>B_B_nonCurriculum</h2>
+		<!-- 출결 시작 -->
+		<h4>※ 출결</h4>
+		<div class="table-responsive">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th rowspan="2">학년</th>
+						<th rowspan="2">수업일수</th>
+						<th colspan="3">결석</th>
+						<th colspan="3">지각</th>
+						<th colspan="3">조퇴</th>
+						<th colspan="3">결과</th>
+						<th rowspan="2">특기사항</th>
+					</tr>
+					<tr>
+						<th>질병</th><th>무단</th><th>기타</th>
+						<th>질병</th><th>무단</th><th>기타</th>
+						<th>질병</th><th>무단</th><th>기타</th>
+						<th>질병</th><th>무단</th><th>기타</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td><td>-</td>
+						<td>-</td><td>-</td><td>-</td>
+						<td>-</td><td>-</td><td>-</td>
+						<td>-</td><td>-</td><td>-</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td><td>-</td>
+						<td>-</td><td>-</td><td>-</td>
+						<td>-</td><td>-</td><td>-</td>
+						<td>-</td><td>-</td><td>-</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td><td>-</td>
+						<td>-</td><td>-</td><td>-</td>
+						<td>-</td><td>-</td><td>-</td>
+						<td>-</td><td>-</td><td>-</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<td>-</td><td>-</td>
+						<td>-</td><td>-</td><td>-</td>
+						<td>-</td><td>-</td><td>-</td>
+						<td>-</td><td>-</td><td>-</td>
+						<td>-</td><td>-</td><td>-</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- 출결 끝 -->
+		<!-- 봉사 시작 -->
+		<h4>※ 봉사</h4>
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<form class="form-inline">
+					<div class="form-group">
+						<label>1학년 시간 : </label>
+						<input class="form-control" type="text" name="">
+					</div>
+					<div class="form-group">
+						<label>2학년 시간 : </label>
+						<input class="form-control" type="text" name="">
+					</div>
+					<div class="form-group">
+						<label>3학년 시간 : </label>
+						<input class="form-control" type="text" name="">
+					</div>
+				</form>		
+			</div>
+		</div>
+		<!-- 봉사 끝 -->
+		<!-- 탭 시작 -->
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#B_B_A_volunteer" data-toggle="tab">봉사</a></li>
+			<li><a href="#B_B_B_careerPath" data-toggle="tab">진로사항</a></li>
+			<li><a href="#B_B_C_remarks" data-toggle="tab">세부능력 및 특기사항</a></li>
+			<li><a href="#B_B_D_awards" data-toggle="tab">수상경력</a></li>
+			<li><a href="#B_B_E_creativeExperienceActivities" data-toggle="tab">창의적 체험활동</a></li>
+			<li><a href="#B_B_F_readingActivities" data-toggle="tab">독서활동</a></li>
+		</ul>
+		<div class="tab-content">
+			{{> B_B_A_volunteer }}
+			{{> B_B_B_careerPath }}
+			{{> B_B_C_remarks }}
+			{{> B_B_D_awards }}
+			{{> B_B_E_creativeExperienceActivities }}
+			{{> B_B_F_readingActivities }}
+		</div>
+		<!-- 탭 끝 -->
 	</div>
 </template>

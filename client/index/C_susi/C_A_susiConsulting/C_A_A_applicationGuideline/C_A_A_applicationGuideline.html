@@ -1,5 +1,26 @@
 <template name="C_A_A_applicationGuideline">
-	<div id="C_A_A_applicationGuideline">
-		<h2>C_A_A_applicationGuideline</h2>
+	<div id="C_A_A_applicationGuideline" class="tab-pane fade in active">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#C_A_A_A_typicalMethod" data-toggle="tab">전형방법</a></li>
+			<li><a href="#C_A_A_B_lowestStandard" data-toggle="tab">최저기준</a></li>
+			<li><a href="#C_A_A_C_practicalSkill" data-toggle="tab">실기</a></li>
+			<li><a href="#C_A_A_D_essayExam" data-toggle="tab">논술</a></li>
+			<li><a href="#C_A_A_E_interview" data-toggle="tab">면접</a></li>
+			<li><a href="#C_A_A_F_writtenTest" data-toggle="tab">필답고사</a></li>
+			<li><a href="#C_A_A_G_etc" data-toggle="tab">기타</a></li>
+			<li><a href="#C_A_A_H_eligibilityForSupport" data-toggle="tab">지원자격</a></li>
+			<li><a href="#C_A_A_I_studentGradesReflectionMethod" data-toggle="tab">학생부반영방법</a></li>
+		</ul>
+		<div class="tab-content">
+			{{> C_A_A_A_typicalMethod }}
+			{{> C_A_A_B_lowestStandard }}
+			{{> C_A_A_C_practicalSkill }}
+			{{> C_A_A_D_essayExam }}
+			{{> C_A_A_E_interview }}
+			{{> C_A_A_F_writtenTest }}
+			{{> C_A_A_G_etc }}
+			{{> C_A_A_H_eligibilityForSupport }}
+			{{> C_A_A_I_studentGradesReflectionMethod }}
+		</div>
 	</div>
 </template>

@@ -1,5 +1,18 @@
 <template name="D_A_A_applicationGuideline">
-	<div id="D_A_A_applicationGuideline">
-		<h2>D_A_A_applicationGuideline</h2>
+	<div id="D_A_A_applicationGuideline" class="tab-pane fade in active">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#D_A_A_A_typicalMethod" data-toggle="tab">전형방법</a></li>
+			<li><a href="#D_A_A_B_lowestStandard" data-toggle="tab">최저기준</a></li>
+			<li><a href="#D_A_A_C_practicalSkill" data-toggle="tab">실기</a></li>
+			<li><a href="#D_A_A_D_interview" data-toggle="tab">면접</a></li>
+			<li><a href="#D_A_A_E_etc" data-toggle="tab">기타</a></li>
+		</ul>
+		<div class="tab-content">
+			{{> D_A_A_A_typicalMethod }}
+			{{> D_A_A_B_lowestStandard }}
+			{{> D_A_A_C_practicalSkill }}
+			{{> D_A_A_D_interview }}
+			{{> D_A_A_E_etc }}
+		</div>
 	</div>
 </template>
